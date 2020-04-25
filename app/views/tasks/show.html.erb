@@ -1,0 +1,27 @@
+<div class="main-container">
+  <h1><%=@task.title %></h1>
+  <div class="container">
+    <%= @task.details %>
+  </div>
+  <div class="checkbox-container">
+  <% if @task.completed == true%>
+    <input type="checkbox" checked>
+    <%= 'This task is completed' %>
+  <% else %>
+    <input type="checkbox">
+    <%= 'This task is not completed yet' %>
+  <% end %>
+
+  <div class="edit-button">
+    <button type="button" class="btn btn-dark">
+      <%= link_to "Edit this task", edit_path(@task.id)%>
+    </button>
+  </div>
+
+  <div class="back-button">
+    <button type="button" class="btn btn-dark">
+      <%= link_to "Back to list", tasks_path%>
+    </button>
+  </div>
+
+</div>

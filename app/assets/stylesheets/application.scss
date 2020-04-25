@@ -1,0 +1,25 @@
+@import "bootstrap/scss/bootstrap";
+
+
+.main-container{
+  margin: 5px;
+}
+li {
+  list-style-type: none;
+}
+.container {
+  background: #D9D9D8;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-right: 700px;
+}
+.checkbox-container{
+  margin-bottom: 20px;
+}
+.btn-primary{
+  background: white;
+}
+
+.edit-button, .back-button{
+  margin: 20px;
+}

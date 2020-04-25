@@ -1,0 +1,16 @@
+<div class="main-container">
+  <h1>Edit task</h1>
+  <%= form_for(@task) do |f| %>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+    <%= f.label :details %>
+    <%= f.text_field :details %>
+    if @task ==
+    <%= f.submit %>
+  <% end %>
+  <div>
+    <input type="checkbox" >Completed
+  </div>
+
+
+</div>
